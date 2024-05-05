@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>AstroTranslator</title>
+    <script type="text/javascript" src="Brython/brython.js"></script>
+    <script type="text/javascript" src="Brython/brython_stdlib.js"></script>
+</head>
+<body onload="brython();">
+    <div class="loadingScreen">
+        <div class="load-wrapper">
+            <div class="item">
+                <i class="loader --1"></i>
+                <p>Загрузка</p>
+            </div>
+        </div>
+    </div>
+    <header class="header">
+        <img src="img/AstroTranslator.svg" alt="LOGO">
+    </header>
+    <main>
+        <h1 hidden>Испытай себя в роли космического переводчика!</h1>
+        <section class="computer">
+            <div class="theory-wrapper">
+                <div class="theory">
+                    <h2 hidden>Теория</h2>
+                    <button class="hide-theory-button">X</button>
+                    <img class="hint" src="" alt="">
+                    <img class="hint" src="" alt="">
+                </div>
+            </div>
+            <section class="sidebar">
+                <div class="tablet">
+                    <div class="additional-buttons">
+                        <button class="help-button">?</button>
+                        <div class="levels-thumbler">
+                            <button class="arrow left-arrow">&leftarrow;</button>
+                            <p class="level-indicator"><span>Уровень </span><span class="current">1</span><span> из </span><span class="total">12</span><span>▾</span></p>
+                            <button class="arrow right-arrow">&rightarrow;</button>
+                            <div class="levels-wrapper">
+                                <div class="levels">
+                                    <span class="level">1</span>
+                                    <span class="level">2</span>
+                                    <span class="level">3</span>
+                                    <span class="level">4</span>
+                                    <span class="level">5</span>
+                                    <span class="level">6</span>
+                                    <span class="level">7</span>
+                                    <span class="level">8</span>
+                                    <span class="level">9</span>
+                                    <span class="level">10</span>
+                                    <span class="level">11</span>
+                                    <span class="level">12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="exercise">
+                        <h2 hidden>Задание</h2>
+                        <p class="caption">Свойство color</p>
+                        <p></p>
+                        <b></b>
+                    </div>
+                    <div class="coding">
+                        <h2 hidden>Код</h2>
+                        <div class="line-numbers">1 2 3 4 5 6 7 8 9 10</div>
+                        <pre>#text {</pre>
+                        <textarea id="code" autocapitalize="none" autofocus style="height: 25px; resize: none;"></textarea>
+                        <pre>}</pre>
+                        <button class="next-btn" disabled>Далее</button>
+                    </div>
+                </div>             
+            </section>
+
+            <section class="sidebar">
+                <h2 hidden>Сцена игры</h2>
+                <div class="game-scene">
+                    <div class="chat">
+                        <h3>Входящий сигнал</h3>
+                        <p id="example"></p>
+                        
+                    </div>
+                    <!-- Повторите, стиль чтобы продолжить -->
+                    <div class="chat">
+                        <h3>Исходящий сигнал</h3>
+                        <p id="text"></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main> 
+
+    <footer>
+        <div class="container">
+            <p>&copy;Баев Тимур, 2022</p>
+            <ul class="contact">
+                <li><a class="vkontakte" href="https://vk.com/tbaev2015" target="_blank">Vkontakte</a></li>
+                <li><a class="telegram" href="https://t.me/lutikiprogers" target="_blank">Telegramm</a></li>
+                <li><a class="steam" href="https://steamcommunity.com/profiles/76561198888010714/" target="_blank">Steam</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts/cssTransformer.js"></script>
+    <script src="scripts/help.js"></script>
+    <script type="text/python" src="level.py" ></script>
+</body>
+</html>
